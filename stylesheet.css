@@ -1,271 +1,228 @@
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(239, 168, 248, 0.932);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+
+
+#top {
+    background-image: url("https://cdn.pixabay.com/photo/2020/02/06/19/28/cherry-blossoms-4825302_960_720.jpg");
+    padding: 300px 0 300px 0;
+    background-size: cover;
+    color: white;
+    opacity: 50%;
+    text-align: center;
+    
+}
+.container h1 {
+    font-size: 45px;
+    text-shadow: rgba(117, 230, 250, 0.76);
+    letter-spacing: 5px;
+}  
+
+.header-right {
+    float: right;
+    margin-right: 25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+
+  .heading {
+    padding-top: 100px;
+  }
+
+/*-------  Start of stack  --------*/
+
+  #stack {
+    height: 500px;
+    text-align: center;
+  }
+
+  .example {
+    float: left;
+    width: 20%;
+  }
+
+  .example-img {
+    position: relative;
+  }
+
+  .example p {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: #fff;
+  }
+
+
+/*-------  End of stack  --------*/
+
+
+
+/*-------  Start of project  --------*/
+
+.projects {
+  padding-bottom: 100px;
 }
 
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 100%;
-  padding: 0 15px;
+.slide-wrapper {
+  text-align: center;
+  width: 1000px;
   margin: 0 auto;
+  color: #5e6f84;
+  padding: 60px 0;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+.slides {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
+.slide {
+  display: none;
+  
 }
 
-.top-wrapper p {
-  opacity: 0.7;
+.active {
+  display: block;
+  
+}
+
+.slide img {
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.index-btn-wrapper {
+  display: flex;
+  justify-content: center;
   font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
   margin-top: 20px;
 }
 
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
-}
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
+.index-btn {
   display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
   text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-radius: 3px;
   cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
 }
+/*-------  End of project  --------*/
 
-footer img {
-  width: 125px;
-}
+/*-------  Start of contact  --------*/
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
-}
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
+  #contact {
+    background-color: rgb(253, 224, 230);
+    padding-top: 20px;
+    padding-bottom: 50px;
     display: block;
   }
-
-  .top-wrapper .btn {
-    width: 100%;
+  .contact-form input[type="text"], .contact-form textarea {
+    margin: 0;
+    padding: 0 10px;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.08);
+    border: none;
+    width: 85%;
+    color: #202020;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all .3s;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .contact-form {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+  }
+  
+  .btn-contact {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background: #5983ff;
+    border: 1px solid #5979ff;
+    color: white;
+    box-shadow: inset 0 1px 0 #5867ed;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    margin: 10px 0;
+    padding: 15px 35px;
+  }
+  
+  .contact-about {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+  }
+  
+  .contact-about i {
+    padding-right: 15px;
+    font-size: 18px;
+  }
+  
+  .contact-about p {
+    margin: 0 0 24px;
+    line-height: 24px;
+  }
+  
+  .error-message {
+    color: #F51414;
+    height: 20px;
   }
 
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
-}
+/*-------  End of contact  --------*/
