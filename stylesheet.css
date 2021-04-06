@@ -1,0 +1,228 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+hr {
+  margin: 15px auto 25px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 4px;
+}
+
+  body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(197, 19, 54);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+
+
+#top {
+  background-color: rgb(223, 70, 100);
+  padding: 10rem 0 6rem;
+  background-size: cover;
+  color: white;
+  text-align: center;
+    
+}
+
+.container h1 {
+    font-size: 45px;
+    text-shadow: rgba(117, 230, 250, 0.76);
+    letter-spacing: 5px;
+}  
+
+.header-right {
+    float: right;
+    margin-right: 25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+
+  .heading {
+    padding-top: 100px;
+  }
+
+/*-------  Start of project  --------*/
+
+.points {
+  display: flex;
+  justify-content:space-evenly;
+  align-content: center;
+}
+
+
+
+/*-------  Start of project  --------*/
+
+.projects {
+  padding-bottom: 100px;
+}
+
+.slide-wrapper {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  color: #5e6f84;
+  padding: 60px 0;
+}
+
+.slides {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: none;
+  
+}
+
+.active {
+  display: block;
+  
+}
+
+.slide img {
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.index-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  text-align: center;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
+}
+/*-------  End of project  --------*/
+
+/*-------  Start of contact  --------*/
+
+  #contact {
+    background-color: rgb(253, 224, 230);
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: block;
+  }
+  .contact-form input[type="text"], .contact-form textarea {
+    margin: 0;
+    padding: 0 10px;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.08);
+    border: none;
+    width: 85%;
+    color: #202020;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all .3s;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .contact-form {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+  }
+  
+  .btn-contact {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background: #5983ff;
+    border: 1px solid #5979ff;
+    color: white;
+    box-shadow: inset 0 1px 0 #5867ed;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    margin: 10px 0;
+    padding: 15px 35px;
+  }
+  
+  .contact-about {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+  }
+  
+  .contact-about i {
+    padding-right: 15px;
+    font-size: 18px;
+  }
+  
+  .contact-about p {
+    margin: 0 0 24px;
+    line-height: 24px;
+  }
+  
+  .error-message {
+    color: #F51414;
+    height: 20px;
+  }
+
+/*-------  End of contact  --------*/
+
+footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+i {
+  padding: 1rem 2rem;
+
+}

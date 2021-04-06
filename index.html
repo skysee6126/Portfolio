@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shinhye Choo</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://kit.fontawesome.com/fd2b5ccd32.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_qBgrYCbTt0Z87cCnCjW59");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function () {
+            console.log('SUCCESS!');
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class=header-left></div>
+      <span class="fa fa-bars menu-icon"></span>
+      <div class=header-right>
+        <a href="#top">TOP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#project">PROJECT</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </div>
+  </header>
+
+
+  <div id="top">
+    <div class="container">
+      <img src="profile.jpg" height=200px width=150px alt="profile">
+      <h1>Shinhye Choo</h1>
+      <hr>
+      <p>Full stack Engineerを目指します</p>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="heading">
+        <h3>ABOUT</h3>
+      </div>
+      <div class="introduce">
+        <div class="catch">
+          <p></p>
+        </div>
+        <div class="points">
+          <div class="point">
+            <h4>コミュニケーション</h4>
+            <i class="fas fa-comments fa-2x"></i>
+            <p></p>
+          </div>
+          <div class="point">
+            <h4>コツコツ</h4>
+            <i class="fas fa-infinity fa-2x"></i>
+            <p></p>
+          </div>
+          <div class="point">
+            <h4>成長</h4>
+            <i class="fas fa-seedling fa-2x"></i>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="project">
+    <div class="container">
+      <div class="heading">
+        <h3>PROJECT</h3>
+      </div>
+      <div class="projects">
+        <td></td>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="contact">
+    <div class="container">
+      <h3>CONTACT</h3>
+      <div class="contact-form">
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
+          <label>Name</label>
+          <input type="text" name="user_name">
+          <label>Email</label>
+          <input type="email" name="user_email">
+          <label>Message</label>
+          <textarea name="message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer-center fa-lg">
+        <i class="far fa-envelope fa-lg"></i>
+        <i class="fab fa-github fa-lg"></i>
+        <i class="fab fa-linkedin-in fa-lg"></i>
+      </div>
+    </div>
+  </footer>
+</body>
