@@ -53,12 +53,12 @@ hr {
     letter-spacing: 5px;
 }  
 
-.header-right {
+.nav {
     float: right;
     margin-right: 25px;
   }
   
-  .header-right a {
+.nav a {
     line-height: 65px;
     padding: 0 25px;
     color: white;
@@ -66,6 +66,10 @@ hr {
     float: left;
     transition: all 0.5s;
   }
+
+.menu-icon {
+  display: none;
+}
 
   .heading {
     padding-top: 100px;
@@ -86,6 +90,19 @@ hr {
 .projects {
   padding-bottom: 100px;
 }
+
+.project img {
+  width: 500px;
+}
+
+.project p {
+  display: none;
+}
+
+.project p:hover {
+  display: flex;
+}
+
 
 .slide-wrapper {
   text-align: center;
