@@ -7,8 +7,13 @@
   <title>Shinhye Choo</title>
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="responsive.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fd2b5ccd32.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <link rel="stylesheet" href="./css/jquery.jdSlider.css">
+  <script src="/path/to/cdn/jquery.slim.min.js"></script>
+  <script src="./js/jquery.jdSlider-latest.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript">
     (function () {
       emailjs.init("user_qBgrYCbTt0Z87cCnCjW59");
@@ -49,10 +54,12 @@
 
   <div id="top">
     <div class="container">
-      <img src="img/profile.jpg" height=200px width=150px alt="profile">
-      <h1>Shinhye Choo</h1>
-      <hr>
-      <p>Full stack Engineerを目指します</p>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <img src="img/profile.jpg" height=200px width=150px alt="profile">
+        <h1>Shinhye Choo</h1>
+        <hr>
+        <p>Full stack Engineerを目指します</p>
+      </div>
     </div>
   </div>
 
@@ -93,6 +100,34 @@
         <h3>PROJECT</h3>
       </div>
       <div class="projects">
+
+        <section class="jd-slider example">
+          <div class="slide-inner">
+            <ul class="slide-area">
+              <li>
+                <img src="img/1.jpg" alt="javascript">
+                <p>javascript</p>
+              </li>
+              <li>
+                Slide 2
+              </li>
+              <li>
+                Slide 3
+              </li>
+            </ul>
+          </div>
+          <a class="prev" href="#">
+            <i class="fas fa-angle-left fa-2x"></i>
+          </a>
+          <a class="next" href="#">
+            <i class="fas fa-angle-right fa-2x"></i>
+          </a>
+          <div class="controller">
+            <div class="indicate-area"></div>
+          </div>
+        </section>
+
+
         <div class="project">
           <img src="img/1.jpg" alt="javascript">
           <p>javascript</p>
@@ -153,4 +188,5 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
