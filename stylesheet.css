@@ -84,7 +84,14 @@ hr {
   align-content: center;
 }
 
+.points h4, .points p {
+  text-align: center;
+}
 
+.points i {
+  display: flex;
+  justify-content: center;
+}
 
 /*-------  Start of project  --------*/
 
