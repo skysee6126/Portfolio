@@ -70,7 +70,17 @@ hr {
     transition: all 0.5s;
   }
 
-.menu-icon {
+.nav a:not(:last-child) {
+  margin-right: 12px;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #333;
+  background-color: rgb(255, 241, 241, 10) ;
+}
+
+#menu {
   display: none;
 }
 
