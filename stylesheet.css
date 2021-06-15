@@ -116,7 +116,7 @@ hr {
   width:60%;
   margin: auto;
   border: 1px solid rgba(224, 223, 223, 0.781);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slide_list {
@@ -127,20 +127,27 @@ hr {
 
 .slide_btn_box {
   margin: auto;
-  padding-bottom: 10%;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-color: transparent;
 }
 
 /*-------  End of project  --------*/
 
 /*-------  Start of contact  --------*/
 
+.container h3 {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
   #contact {
     background-color: rgb(253, 224, 230);
     padding-top: 20px;
     padding-bottom: 50px;
     display: block;
   }
-  .contact-form input[type="text"], .contact-form textarea {
+  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
     margin: 0;
     padding: 0 10px;
     vertical-align: middle;
@@ -182,6 +189,14 @@ hr {
     padding: 15px 35px;
   }
   
+  #btn_send {
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 20%;
+    background-color: rgb(223, 70, 100, 0.6);
+    color: white;
+  }
+
   .contact-about {
     display: inline-block;
     vertical-align: top;
