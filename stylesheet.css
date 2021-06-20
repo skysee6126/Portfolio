@@ -130,7 +130,17 @@ hr {
   padding-top: 2rem;
   padding-bottom: 5rem;
   text-align: center;
-  background-color: transparent;
+}
+
+.btn {
+  background-color: white;
+  border: transparent;
+  margin: 0 5rem;
+  color: grey;
+}
+
+.btn:active {
+  color:black
 }
 
 /*-------  End of project  --------*/
