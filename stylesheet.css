@@ -56,6 +56,11 @@ hr {
     letter-spacing: 5px;
 }  
 
+.profile_name:hover {
+  transition: all 1s linear;
+  transform: rotateX(360deg);
+}
+
 .nav {
     float: right;
     margin-right: 25px;
