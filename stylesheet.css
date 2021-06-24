@@ -111,6 +111,18 @@ hr {
   justify-content: center;
 }
 
+@media (min-width: 300px) {
+  .points {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .point {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: rgb(230, 227, 227);
+  }
+}
+
 /*-------  Start of project  --------*/
 
 .projects {
