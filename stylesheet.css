@@ -111,7 +111,7 @@ hr {
   justify-content: center;
 }
 
-@media (min-width: 300px) {
+@media (max-width: 300px) {
   .points {
     flex-direction: column;
     flex-wrap: wrap;
