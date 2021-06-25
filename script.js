@@ -1,18 +1,26 @@
 const carouselSlide = document.querySelector(".slide_box");
-const carouselImages = document.querySelectorAll(".slide_list img");
+const carouselImages = document.querySelector(".slide_list");
+const numberOfImages = document.querySelectorAll(".slide_list img").length;
 
-const prevBtn = document.querySelector(".fa-angle-left");
-const nextBtn = document.querySelector(".fa-angle-right");
+const Btn = document.querySelectorAll(".btn");
 
-let counter = 1;
-const size = carouselImages[0].clientWidth;
+let imgIndex = 1;
+let translateX = 0;
 
-// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-nextBtn.addEventListener('click', () => {
-  carouselSlide.style.transform = "transfrom 0.4s ease-in-out";
-});
-
-prevBtn.addEventListener('click', () => {
-  carouselSlide.style.transition = "transfrom 0.4s ease-in-out";
+Btn.forEach(button => {
+  button.addEventListener('click', event => {
+    if (event.target.class === 'fa-angle-left') {
+      if (imgIndex !== 1) {
+        imgIndex--;
+        translateX += 300;
+      }
+    } else {
+      if (imgIndex !== numberOfImages) {
+        imgIndex++;
+        translateX -= 300;
+      }
+    }
+    carouselImages.style.transform = `translateX(${translateX}px)`;
+  });
 });

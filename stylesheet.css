@@ -130,17 +130,20 @@ hr {
 }
 
 .slide_wrap {
+  width: 300px;
+  display: flex;
+  position: relative;
   overflow: hidden;
 }
 
 .slide_box {
-  width: 100vw;
-  transition: transform 0.5s;
+  
 }
 
 .slide_list {
-  width:60vw;
-  float: left;
+  transition: transform 0.5s;
+  transform: translateX(0);
+  display: flex;
 }
 
 .slide_list img {
