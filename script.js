@@ -13,12 +13,12 @@ Btn.forEach(button => {
     if (event.target.class === 'fa-angle-left') {
       if (imgIndex !== 1) {
         imgIndex--;
-        translateX += 300;
+        translateX += 500;
       }
     } else {
       if (imgIndex !== numberOfImages) {
         imgIndex++;
-        translateX -= 300;
+        translateX -= 500;
       }
     }
     carouselImages.style.transform = `translateX(${translateX}px)`;
