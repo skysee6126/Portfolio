@@ -1,9 +1,8 @@
-
 * {
     box-sizing: border-box;
     text-decoration: none;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
   }
 
 hr {
@@ -14,31 +13,32 @@ hr {
   border-top: solid 4px;
 }
 
-  body {
-    margin: 0;
-    font-family: "Hiragino Kaku Gothic ProN";
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .container {
-    max-width: 1170px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
 
-  
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgb(197, 19, 54);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-  }
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+header {
+  height: auto;
+  width: 100%;
+  background-color: rgb(197, 19, 54);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
 
 
 #top {
@@ -62,8 +62,8 @@ hr {
 }
 
 .nav {
-    float: right;
-    margin-right: 25px;
+    display: flex;
+    margin-right: 1rem;
   }
   
 .nav a {
@@ -87,12 +87,50 @@ hr {
 
 #menu {
   display: none;
+  color: white;
 }
 
-  .heading {
-    padding-top: 100px;
-    padding-bottom: 2rem;
+@media (max-width: 670px) {
+  #menu {
+    display: flex;
+    margin: 1.5rem;
   }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+    margin: 0;
+  }
+  .nav a {
+    margin: 0px;
+  }
+  
+  .nav a:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .nav a:hover,
+  .nav a:focus {
+    color: #333;
+    background-color: rgb(255, 241, 241, 10);
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+
+.heading {
+  margin: 5rem auto 1rem;
+}
+
+  
+@media (max-width: 670px) {
+  .heading {
+    margin-left: 3rem;
+    border-bottom: rgb(100, 99, 99) 3px solid;
+  }
+}
+
+
 
 /*-------  Start of project  --------*/
 
@@ -111,7 +149,7 @@ hr {
   justify-content: center;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 670px) {
   .points {
     flex-direction: column;
     flex-wrap: wrap;
@@ -131,6 +169,8 @@ hr {
 
 .slide_box {
   display: flex;
+  justify-content: center;
+  margin: auto;
   position: relative;
   overflow: hidden;
   width: 500px;
@@ -140,7 +180,7 @@ hr {
 .slide_list {
   transition: transform 0.5s;
   transform: translateX(0);
-  display: flex;
+  display: flex;  
 }
 
 .slide_list img {
